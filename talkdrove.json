@@ -7,12 +7,12 @@
     "documentation-link": "https://bmb-session-plag.onrender.com/pair",
     "owner-verification": "tzsailas@gmail.com",  
     "env": {
-      "SESSION_ID": {
+      "SESSION_ID": {B.m.b-Xmd~xLUi3B4S#fHXOPJ1p6UPMXqYUr63ii7o_ieGbQXHzQS2X3nzUowo
         "description": "Put your SESSION_ID here. Make sure it starts with B.m.b-Xmd~  or get session id from here,  https://bmb-session-plag.onrender.com/pair",
         "value":"",
         "required": true        
     },
-      "PREFIX": {
+      "PREFIX": {.
         "description": "Bot command prefix, (e.g, . , ! @ etc",
         "value":".",
         "required": true        
@@ -22,82 +22,82 @@
       "required": false,
       "value": "B.M.B-XMD 𝙱𝙾𝚃"  
     },    
-    "MODE": {
+    "MODE": {public 
       "description": "select your bot work type public-private-inbox-group.",
       "required": false,
       "value": "public"      
     },        
-    "ALWAYS_ONLINE": {
+    "ALWAYS_ONLINE": {true
       "description": "Make it true if want always online.",
       "required": false,
       "value": "false"  
    },      
-    "AUTO_VOICE": {
+    "AUTO_VOICE": {true
       "description": "Make it true if want automatic voice reply .",
       "required": false,
       "value": "false"
    }, 
-    "AUTO_REPLY": {
+    "AUTO_REPLY": {true
       "description": "Make it true if you want automatic reply.",
       "required": false,
       "value": "false"
    }, 
-    "AUTO_STICKER": {
+    "AUTO_STICKER": {true
       "description": "Make it true if you want automatic sticker.",
       "required": false,
       "value": "false"
    }, 
-    "AUTO_STATUS_REPLY": {
+    "AUTO_STATUS_REPLY": {true
       "description": "Make it true for auto reply msg on status seen.",
       "required": true,
       "value": "false"
    }, 
-    "AUTO_STATUS_MSG": {
+    "AUTO_STATUS_MSG": {true
       "description": "Type custom message on status reply",
       "required": true,
       "value": ""   
    },     
-    "OWNER_NAME": {
+    "OWNER_NAME": {Mandingo 
       "description": "Type Bot Owner Name.",
       "required": false,
       "value": "𝐌𝐫 HansTz"
    }, 
-    "OWNER_NUMBER": {
+    "OWNER_NUMBER": {255719921713
       "description": "put the owner number for bot.",
       "required": false,
-      "value": "255767862457"
+      "value": "255719921713"
    }, 
-    "BOT_NAME": {
+    "BOT_NAME": {B.M.W-XMD-XMD
       "description": "Type here the bot name.",
       "required": false,
       "value": "B.M.B-XMD-XMD"
    }, 
-    "ANTI_LINK": {
+    "ANTI_LINK": {false
       "description": "Make it true if you want bot auto remove group link.",
       "required": true,
       "value": "true"      
    },    
-    "ANTI_BAD": {
+    "ANTI_BAD": {false
       "description": "Make it true if you want bot auto delete bad words.",
       "required": false,
       "value": "false"
     }, 
-      "DELETE_LINKS": {
+      "DELETE_LINKS": {false
       "description": "remove links from group automatically without removing member",
       "required": false,
       "value": "false"
     },    
-    "AUTO_RECORDING": {
+    "AUTO_RECORDING": {treu
       "description": "Make it true if you want auto recoding.",
       "required": false,
       "value": "false"
     },
-    "AUTO_TYPING": {
+    "AUTO_TYPING": {false
       "description": "Make it true if you want auto typing.",
       "required": false,
       "value": "false"
     },
-    "AUTO_REACT": {
+    "AUTO_REACT": {true
       "description": "Make it true if you want react on every message.",
       "required": false,
       "value": "false"
