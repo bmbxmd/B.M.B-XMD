@@ -23,6 +23,6 @@ const key = {
         await conn.sendMessage(m.chat, { delete: key })
 } catch(e) {
 console.log(e);
-reply('💫𝐁.𝐌.𝐁-𝐗𝐌𝐃 💫 successful..👨‍💻✅')
+reply('🔥𝐁.𝐌.𝐁-𝐗𝐌𝐃🔥 successful..👨‍💻✅')
 } 
 })
