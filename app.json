@@ -1,11 +1,11 @@
 {
-  "name": "𝐁.𝐌.𝐁-𝐗𝐌𝐃",
-  "description": "Javascript WhatsApp bot made by 𝙱.𝙼.𝙱-𝚇𝙼𝙳 ",
-  "keywords": ["𝐁.𝐌.𝐁-𝐗𝐌𝐃"],
+  "name": "B.M.B-XMD",
+  "description": "Javascript WhatsApp bot made by 𝙱.𝙼.𝙱-𝚇𝙼𝙳.",
+  "keywords": ["B.M.B-XMD"],
   
   
-  "logo": "https://ibb.co/Cs0L5Rj0",
-  "repository": "https://github.com/bmb-tz/B.M.B-TECH",
+  "logo": "https://i.imgur.com/jsJSfta.jpeg",
+  "repository": "https://github.com/bmbxmd/B.M.B-XMD",
   "succes_url": "/",
 
   "stack": "container",
@@ -19,13 +19,13 @@
     "ALIVE_IMG": {
       "description": "paste your image url if you don't have you can use this public url.",
       "required": false,
-      "value": "https://files.catbox.moe/nu93in.jpg"
+      "value": "https://i.ibb.co/HLbyGd1G/nexus-xmd.jpg"
     }, 
     
     "LIVE_MSG": {
       "description": "paste your alive message hear.",
       "required": false,
-      "value": "> 𝙱.𝙼.𝙱-𝚇𝙼𝙳 AM ONLINE BY MY B.M.B CREATOR⚡"
+      "value": "> B.M.B-XMD IS ACTIVE AND ALIVE⚡"
     },
     
     "PREFIX": {
@@ -63,7 +63,7 @@
     "AUTO_STICKER": {
       "description": "Make it true if you want automatic sticker.",
       "required": false,
-      "value": "false"
+      "value": "true"
     }, 
 
 
@@ -76,19 +76,19 @@
     "AUTO_STATUS_REPLY": {
       "description": "Make it true for auto reply msg on status seen.",
       "required": true,
-      "value": "false"
+      "value": "true"
     }, 
 
     "AUTO_STATUS__MSG": {
       "description": "Type custom message on status reply",
       "required": true,
-      "value": "*🎉👀 𝙹𝚄𝚂𝚃 𝙽𝙾𝚆 𝚂𝙴𝙴𝙽 𝙱𝚈 𝙱.𝙼.𝙱-𝚇𝙼𝙳🤩🥳😍*"
+      "value": "*🎉👀 sᴇᴇɴ ʙʏ 𝙱.𝙼.𝙱-𝚇𝙼𝙳🚀🔥*"
     }, 
 
     "OWNER_NAME": {
       "description": "Type Bot Owner Name.",
       "required": false,
-      "value": "𝐁.𝐌.𝐁-𝐗𝐌𝐃✨"
+      "value": "𝙱.𝙼.𝙱-𝚇𝙼𝙳"
 }, 
 
     "OWNER_NUMBER": {
@@ -100,7 +100,7 @@
     "BOT_NAME": {
       "description": "Type here the bot name.",
       "required": false,
-      "value": "𝐁.𝐌.𝐁-𝐗𝐌𝐃"
+      "value": "✦ 𝐁.𝐌.𝐁-𝐗𝐌𝐃✦"
 
       }, 
 
@@ -120,7 +120,7 @@
      "DESCRIPTION": {
       "description": "add caption for menu and other",
       "required": false,
-      "value": "*𝐁.𝐌.𝐁-𝐗𝐌𝐃*"
+      "value": "*© ✦𝐁.𝐌.𝐁-𝐗𝐌𝐃✦*"
     },
 
       "DELETE_LINKS": {
