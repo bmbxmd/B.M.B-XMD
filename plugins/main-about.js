@@ -1,46 +1,62 @@
-const config = require("../config");
-const { cmd } = require("../command");
+const config = require('../config');
+const acrcloud = require("acrcloud");
+const { cmd, commands } = require('../command');
+const { fetchJson } = require('../lib/functions');
 
 cmd({
-  pattern: "about",
-  alias: ["mrfrank"],
-  react: "🇹🇿",
-  desc: "Get owner description",
-  category: "main",
-  filename: __filename,
-}, async (bot, message, args, extras) => {
-  const {
-    from,
-    quoted,
-    pushname,
-    reply,
-  } = extras;
-
+  pattern: 'shazam',
+  alias: ['findsong'],
+  react: '🔎',
+  desc: 'Identify a song.',
+  category: 'music',
+  filename: __filename
+}, async (conn, mek, m, {
+  from,
+  quoted,
+  body,
+  isCmd,
+  command,
+  args,
+  q,
+  isGroup,
+  sender,
+  senderNumber,
+  botNumber2,
+  botNumber,
+  pushname,
+  isMe,
+  isOwner,
+  groupMetadata,
+  groupName,
+  participants,
+  groupAdmins,
+  isBotAdmins,
+  isAdmins,
+  reply
+}) => {
   try {
-    const separator = "━━━━━━━━━━━━━━━━━━━━━━━━";
-    const readMore = String.fromCharCode(0x200e).repeat(4000); // Generates a long "Read More" effect
-    const caption = `${separator}\n\n*👋 HELLO ${pushname || "User"} 😄*\n\n` +
-      "*INTRODUCING TO YOU 𝐁.𝐌.𝐁-𝐗𝐌𝐃 MD😇*\n\n" +
-      "A Versatile WhatsApp Based Multi Device Bot Created By Hans Tz from Tanzania.\n" +
-      "Its sole purpose is to remove the burden or cost of purchasing data bundles to download Songs, Apps, Videos & Movies by using WhatsApp bundles.\n\n" +
-      "*For More Visit*: https://wa.me/255767862457\n\n" +
-      `${separator}\n${readMore}\n` +
-      "*SOURCE CODE* ⛓️\n> https://github.com/bmbxmd/B.M.B-XMD\n\n" +
-      "*FOLLOW OWNER* 🦋\n> https://github.com/bmbxmd/\n\n" +
-      "*OWNER'S WHATSAPP* 🚀\n> https://wa.me/255767862457/?text=𝐁.𝐌.𝐁-𝐗𝐌𝐃+Fan+Here\n\n" +
-      "*2ND DEVELOPER* 🦄\n> https://wa.me/255767862457/?text=𝐁.𝐌.𝐁-𝐗𝐌𝐃+Fan+Here\n\n" +
-      "*SUPPORT CHANNEL* 🪄\n> https://whatsapp.com/channel/0029VawO6hgF6sn7k3SuVU3z\n\n" +
-      "*FOLLOW OWNER* 🤍\n> https://youtube.com/bmbxmd/\n\n" +
-      `\`\`\`[RELEASE DATE - 3 jun 2025]\`\`\`\n\n` +
-      "> *𝙱.𝙼.𝙱-𝚇𝙼𝙳*\n\n" +
-      `${separator}`;
+    if (!quoted) return reply('Please tag a song/audio for the AI to identify.');
 
-    await bot.sendMessage(from, {
-      image: { url: config.ALIVE_IMG },
-      caption,
-    }, { quoted });
+    
+    
+    let buffer = await m.quoted.download();
+
+    const acr = new acrcloud({
+      host: 'identify-ap-southeast-1.acrcloud.com',
+      access_key: '26afd4eec96b0f5e5ab16a7e6e05ab37',
+      access_secret: 'wXOZIqdMNZmaHJP1YDWVyeQLg579uK2CfY6hWMN8'
+    });
+
+    let { status, metadata } = await acr.identify(buffer);
+    if (status.code !== 0) return reply(status.msg);
+
+    let { title, artists, album, genres, release_date } = metadata.music[0];
+    let txt = `*📑 Title:* ${title}${artists ? ` ${album.name}` : ''}${genres ? `\n*🎀 Genres:* ${genres.map(v => v.name).join(', ')}` : ''}\n`;
+    txt += `*🕐 Release Date:* ${release_date}`;
+    return reply(`*🔎 SUBZERO SONG IDENTIFYER 🔎*:\n\n${txt}`);
   } catch (error) {
     console.error(error);
-    reply(`Error: ${error.message}`);
+    reply(`An error occurred: ${error.message}`);
   }
 });
+    
