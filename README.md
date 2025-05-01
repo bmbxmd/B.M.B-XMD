@@ -12,11 +12,11 @@
     <img src="https://img.shields.io/github/watchers/bmbxmd/B.M.B-XMD?label=Watching&style=flat&color=007bff" alt="Watching" style="transform: scale(1.4); margin: 5px;"/>
   </a>
     
-<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Black+Ops+One&size=100&pause=1000&color=ff0000&center=true&width=1000&height=200&lines=BMB-XMD-V4.0" alt="Typing SVG" /></a>
+<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Black+Ops+One&size=100&pause=1000&color=ff0000&center=true&width=1000&height=200&lines=𝐊𝐀𝐋𝐄𝐄𝐌 N♛𝐌" alt="Typing SVG" /></a>
   </p>
 
 <div align="center">
-  <img src="https://files.catbox.moe/f4q8fh.jpg" width="300" style="border-radius: 20px; box-shadow: 0 0 20px #00ffff;"/>
+  <img src="https://github.com/KALEEMJANMODS67/KALEEMJANMODS67/blob/717549c5b80b62bcaffdbfab22d696b443069cec/468.jpg" width="300" style="border-radius: 20px; box-shadow: 0 0 20px #00ffff;"/>
 </div>
 
          `DEPLOMENT STEPS`
@@ -33,7 +33,7 @@
 
 <div style="background: #000000; border: 1px solid #ff00ff; border-radius: 15px; padding: 20px; box-shadow: 0 0 15px #ff00ff; margin-bottom: 30px;">
 
-  > **∞ BMB ACCOUNT**
+  > **∞ ƙαʅҽҽɱ ACCOUNT**
   <a href='https://github.com/bmbxmd' target="_blank">
     <img src='https://img.shields.io/badge/FOLLOW ACCOUNT-800080?style=for-the-badge&logo=matrix&logoColor=white&labelColor=000000'/>
   </a></br>
